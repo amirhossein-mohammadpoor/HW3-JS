@@ -1,0 +1,14 @@
+alert(combine([1,2,3], [4,5,6], [9,8,7,0]));
+
+function combine(...arrs) {
+    let j=0;
+    let res= [];
+
+    for(let arr of arrs)
+        for(let value of arr ){
+            res[j]= value;
+            j++;
+        }
+
+    return res.sort();
+}

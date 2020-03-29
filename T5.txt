@@ -1,0 +1,10 @@
+let arr= ["a","b","c","d"];
+
+replaceByItem(arr,"b","x");
+
+alert(arr);
+
+function replaceByItem(arr,c,n) {
+    let i= arr.indexOf(c);
+    arr[i]= n;
+}

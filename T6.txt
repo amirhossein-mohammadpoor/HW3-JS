@@ -1,0 +1,18 @@
+let str= "i have 41 apples and 633.5 pineapples";
+
+alert( extractNumbers(str) );
+
+function extractNumbers(str){
+    let res= [];
+    let j= 0;
+
+    let arr= str.split(" ");
+
+    for(let value of arr) 
+        if( !isNaN(value) ){
+            res[j]= value;
+            j++;
+        }
+    
+    return res
+}

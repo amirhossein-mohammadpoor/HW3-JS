@@ -1,0 +1,18 @@
+alert(removeDuplicate([1,1,4,5,3,5,3,9]));
+
+function removeDuplicate(arr){
+    let res= [];
+    let j= 1;
+
+    res[0]= arr[0];
+
+    for(let i=1;i<arr.length;i++){
+        if( res.indexOf(arr[i])<0 ){
+            res[j]= arr[i];
+            j++;
+        }
+            
+    }
+
+    return res;
+}

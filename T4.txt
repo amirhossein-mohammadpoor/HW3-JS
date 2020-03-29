@@ -1,0 +1,10 @@
+let res= findByItem([1,2,3,4],2);
+
+console.log(res);
+
+function findByItem(arr,value){
+    return {
+        index: arr.indexOf(value),
+        item: value
+    }
+}
